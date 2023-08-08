@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/style.css">
-  <title>Secret Message</title>
-</head>
-<body>
-  <h1>REACT SECRET MESSAGE</h1>
-  <div class="app">
-    <div class="input">
-      <input type="text" class="input-field" placeholder="enter message...">
-      <button class="encode">encode</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-widthkjkj, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Secret Message</title>
+  </head>
+  <body>
+    
+    <div class="app">
+      <h1>Secret Message Encoder</h1>
+      <div class="input">
+         <p>
+      Convert your confidential message into unreadable text using this
+      application
+    </p>
+        <label for="input-field">Message (Enter Private Message/ Copy and Paste the Encoded message)</label>
+        <div class="inputField">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="enter message..."
+          />
+          <button class="encode">encode</button>
+        </div>
+      </div>
+      <div class="display">
+        <div class="normalized"></div>
+        <div class="chunks"></div>
+        <div class="code"></div>
+      </div>
     </div>
-    <div class="normalized">1</div>
-    <div class="chunks">2</div>
-    <div class="code">3</div>
-  </div>
 
-  <script src="./assets/script.js"></script>
-</body>
+    <script src="./assets/script.js"></script>
+  </body>
 </html>
