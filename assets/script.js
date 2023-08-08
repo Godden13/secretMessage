@@ -32,6 +32,7 @@ function squareEncode(string, [rows, colums]) {
   for (let i = 0; i <= string.length; i += colums) {
     const val = string.slice(i, colums + i);
     chunks.push(val);
+    document.querySelector(".chunks").innerHTML = chunks;
   }
   const encodedStr = [];
   for (let i = 0; i < colums; i++) {
